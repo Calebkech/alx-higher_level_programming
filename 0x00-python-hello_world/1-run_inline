@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#Run The Python Code
+python3 -c "$PYCODE"
