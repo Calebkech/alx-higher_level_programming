@@ -5,4 +5,3 @@ for ten_digits in range(0, 10):
             print("{}{}".format(ten_digits, units))
         else:
             print("{}{}".format(ten_digits, units), end=", ")
-            
