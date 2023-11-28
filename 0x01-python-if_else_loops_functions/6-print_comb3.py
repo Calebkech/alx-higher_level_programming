@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-for tens_digit in range(10):
-    for units_digit in range(tens_digit + 1, 10):
-        print("{:d}{:d}".format(tens_digit, units_digit), end=", " if units_digit < 9 else "\n")
+for ten_digits in range(0, 10):
+    for units in range(ten_digits + 1, 10):
+        if ten_digits == 8 and units == 9:
+            print("{}{}".format(ten_digits, units))
+        else:
+            print("{}{}".format(ten_digits, units), end=", ")
