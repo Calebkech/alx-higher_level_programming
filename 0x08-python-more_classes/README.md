@@ -6,7 +6,7 @@ In this project, I delved deeper into object-oriented programming in Python. The
 
 ## Directory Structure
 
-- [tests](./tests): Folder containing test files provided by Holberton School.
+- [tests](./tests): Folder containing test files provided by ALX.
 
 ## Tasks
 
