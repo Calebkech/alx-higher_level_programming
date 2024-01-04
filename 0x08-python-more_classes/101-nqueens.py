@@ -19,6 +19,7 @@ Example:
 """
 import sys
 
+
 def init_board(n):
     """Initialize an `n`x`n` sized chessboard with 0's."""
     board = []
@@ -45,10 +46,11 @@ def get_solution(board):
     return (solution)
 
 
-def xout(board: list, row: int, col: int) -> None:
+def xout(board, row, col):
     """X out spots on a chessboard.
 
-    X's out all spots on the board where a queen can no longer be placed without violating the N-Queens rule.
+    All spots where non-attacking queens can no
+    longer be played are X-ed out.
 
     Args:
         board (list): The current working chessboard.
@@ -79,7 +81,7 @@ def xout(board: list, row: int, col: int) -> None:
     for r in range(row - 1, -1, -1):
         if c < 0:
             break
-        board[r][c] = "x"
+        board[r][c]
         c -= 1
     # X out all spots diagonally up to the right
     c = col + 1
@@ -97,7 +99,7 @@ def xout(board: list, row: int, col: int) -> None:
         c -= 1
 
 
-def recursive_solve(board: list, row: int, queens: int, solutions: list) -> list:
+def recursive_solve(board, row, queens, solutions):
     """Recursively solve an N-queens puzzle.
 
     Args:
@@ -105,13 +107,12 @@ def recursive_solve(board: list, row: int, queens: int, solutions: list) -> list
         row (int): The current working row.
         queens (int): The current number of placed queens.
         solutions (list): A list of lists of solutions.
-
     Returns:
-        solutions: A list of all solutions to the N-queens puzzle.
+        solutions
     """
     if queens == len(board):
         solutions.append(get_solution(board))
-        return solutions
+        return (solutions)
 
     for c in range(len(board)):
         if board[row][c] == " ":
@@ -121,7 +122,7 @@ def recursive_solve(board: list, row: int, queens: int, solutions: list) -> list
             solutions = recursive_solve(tmp_board, row + 1,
                                         queens + 1, solutions)
 
-    return solutions
+    return (solutions)
 
 
 if __name__ == "__main__":
