@@ -1,3 +1,2 @@
-SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH
-FROM information_schema.COLUMNS
-WHERE TABLE_SCHEMA = 'hbtn_0c_0' AND TABLE_NAME = 'first_table';
+-- Prints the full description of the table first_table in my MySQL server.
+SHOW CREATE TABLE `first_table`;

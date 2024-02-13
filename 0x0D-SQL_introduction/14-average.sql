@@ -1,2 +1,3 @@
-SELECT AVG(score) AS average
-FROM hbtn_0c_0.second_table;
+-- Computes the average score of all records in the table second_table in my MySQL server.
+SELECT AVG(`score`) AS `average`
+FROM `second_table`;
